@@ -4,7 +4,7 @@ const byte sensorpin= A1;
 const byte interruptPin = 2; //the interrupt pin is 2
 volatile byte state = LOW;  //determining the led state
 long lastDebounceTime=0;   //last debounce time to overcome the bouncing effect
-long debounceDelay=100;   //needed delay to overcome bouncing effect
+unsigned long debounceDelay=100;   //needed delay to overcome bouncing effect
 long reading_rate=3000; // 3 secns rate
 long last_read=0;  // to be able to count the 3 seconds
 
