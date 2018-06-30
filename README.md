@@ -15,3 +15,6 @@ it takes the ground and 3.3 v from the arduino and has it's input pin to the ard
 -------------------------------------------
 
 
+You can run yhe code through opening the arduino IDE and uploading the .ino file to the arduino 
+ehen you press the switch the the led should be on ,pressing again will set it off
+ the arsuino will be printing the temprature from the sensor every 3 sexonds
