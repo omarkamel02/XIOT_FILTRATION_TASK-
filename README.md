@@ -13,5 +13,6 @@ on pin 2
 Sensor: I used LM35 temprature sensor 
 
 It takes the ground and 5 v from the arduino and has it's input pin to the arduino is on pin A1
+-------------------------------------------
 
 
