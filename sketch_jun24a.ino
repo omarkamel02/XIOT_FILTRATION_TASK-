@@ -6,7 +6,7 @@ volatile byte state = LOW;  //determining the led state
 long lastDebounceTime=0;   //last debounce time to overcome the bouncing effect
 long debounceDelay=100;   //needed delay to overcome bouncing effect
 long reading_rate=3000; // 3 secns rate
-long last_read=0;
+long last_read=0;  // to be able to count the 3 seconds
 
 void setup() {
   pinMode(ledPin, OUTPUT);  // the led pin is output
@@ -46,6 +46,7 @@ void blink() {
   
 }
 float temp_read(){
+  //reading from the sensor
 int  val=analogRead(sensorpin); //reading the register value from the ADC
   float mv = ( val/1024.0)*5000; //knwoing the corresponding mV to this value, max is 5000mv that corresponds to 1024
   float cel = (mv/10); //converting the mv to temprature,,, 1c=10mv
